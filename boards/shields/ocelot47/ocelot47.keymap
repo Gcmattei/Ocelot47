@@ -6,7 +6,7 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            display-name = "Base"
+            display-name = "Base";
             // -------------------------------------
             // |    ESC    |     Q     |     W     |     E     |     R     |     T     |     Y     |     U     |     I     |     O     |     P     |    BACK   |
             // |    TAB    |     A     |     S     |     D     |     F     |     G     |     H     |     J     |     K     |     L     |     :;    |   ENTER   |
