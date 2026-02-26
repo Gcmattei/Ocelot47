@@ -1,6 +1,5 @@
 if SHIELD_OCELOT47
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "Ocelot 47"
 
