@@ -10,9 +10,5 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: Ocelot47
-      url: https://github.com/Gcmattei/Ocelot47
-      revision: main
-      path: modules/Ocelot47
   self:
     path: config
