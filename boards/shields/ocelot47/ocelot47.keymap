@@ -1,0 +1,37 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+            display-name = "Base"
+            // -------------------------------------
+            // |    ESC    |     Q     |     W     |     E     |     R     |     T     |     Y     |     U     |     I     |     O     |     P     |    BACK   |
+            // |    TAB    |     A     |     S     |     D     |     F     |     G     |     H     |     J     |     K     |     L     |     :;    |   ENTER   |
+            // |    SHFT   |     Z     |     X     |     C     |     V     |     B     |     N     |     M     |     <,    |     >.    |     UP    |     "'    |
+            // |    CTRL   |    WIN    |    ALT    |     FN    |     []    |         SPACE         |     ?/    |     |\    |    LEFT   |    DWN    |   RIGHT   |
+            bindings = <
+                &kp ESC    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I     &kp O    &kp P     &kp BACKSPACE
+                &kp TAB    &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K     &kp L    &kp SEMI  &kp ENTER
+                &kp LSHIFT &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA &kp DOT  &kp UP    &kp SQT
+                &kp LCTRL  &kp LWIN &kp LALT &mo 1    &kp LBKT    &kp SPACE      &kp FSLH &kp BSLH  &kp LEFT &kp DOWN  &kp RIGHT
+            >;
+        };
+        num_layer { // Layer 1
+            display-name = "Numbers"
+            // -------------------------------------
+            // |     F1    |     F2    |     F3    |     F4    |     F5    |     F6    |     F7    |     F8    |     F9    |    F10    |    F11    |    F12    |
+            // |   TRANS   |     1     |     2     |     3     |     4     |     5     |     6     |     7     |     8     |     9     |     0     |   DELETE  |
+            // |    CAPS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   PGUP   |   PRINT   |
+            // |   TRANS   |   TRANS   |   TRANS   |   TRANS   |   TRANS   |         TRANS         |   TRANS   |   TRANS   |    HOME   |   PGDN   |     END   |
+            bindings = <
+                &kp F1     &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &kp F7   &kp F8   &kp F9    &kp F10  &kp F11   &kp F12
+                &trans     &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &kp DEL
+                &kp CAPS   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans    &trans   &kp PG_UP &kp PSCRN
+                &trans     &trans   &trans   &trans   &trans      &trans         &trans   &trans    &kp HOME &kp PG_DN &kp end
+            >;
+        };
+    };
+ };
