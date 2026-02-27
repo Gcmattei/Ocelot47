@@ -3,6 +3,9 @@ id: ocelot47
 name: Ocelot 47
 type: shield
 url: https://github.com/Gcmattei/Ocelot47/tree/main
+requires:
+  - zmk
+  - nice_nano_v2
 features:
   - keys
   - studio

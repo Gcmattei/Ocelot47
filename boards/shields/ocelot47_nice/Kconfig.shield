@@ -1,0 +1,2 @@
+config SHIELD_OCELOT47_NICE
+    def_bool $(shields_list_contains,ocelot47_nice)

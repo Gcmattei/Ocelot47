@@ -1,0 +1,6 @@
+if SHIELD_OCELOT47_NICE
+
+config ZMK_KEYBOARD_NAME
+    default "ocelot47_nice"
+
+endif # SHIELD_OCELOT47_NICE
